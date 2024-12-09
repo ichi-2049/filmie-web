@@ -2,7 +2,7 @@
 
 import React from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Image from 'next/image'; // next/image をインポート
+import Image from 'next/image';
 import { useMovies } from '@/features/movie/hooks/useMovies';
 
 type MovieListProps = {
@@ -48,7 +48,7 @@ export const MoviesInfiniteList: React.FC<MovieListProps> = ({ searchQuery }) =>
                 alt={movie.title}
                 fill // 画像のサイズを親要素に合わせる
                 style={{ objectFit: 'cover' }} // 画像の表示形式
-                sizes="(max-width: 768px) 100vw, 20vw" // レスポンシブなサイズ指定
+                sizes="(max-width: 768px) 100vw, 20vw"
               />
             </div>
             {/* 映画タイトル */}
